@@ -93,8 +93,8 @@ Projects based on hands-on labs and real-world investigations.
 ## 📬 Contact
 
 📧 andonmack96@gmail.com  
-📍 Based in [Your City], Available for Remote & On-Site Work  
-🔗 [LinkedIn](https://www.linkedin.com/in/your-profile) | [Twitter](https://twitter.com/yourhandle)
+📍 Based in Columbus, GA, Available for Remote & On-Site Work  
+🔗 [LinkedIn]([https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/andon-mack-62632ab2/)) | [Medium]([https://twitter.com/yourhandle](https://medium.com/@andonrmack))
 
 ---
 

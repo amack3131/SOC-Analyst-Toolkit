@@ -17,6 +17,7 @@ Welcome to my Security Operations Center (SOC) Analyst Toolkit. This repository 
 - [📓 Playbooks](#-playbooks)
 - [🧪 Labs & Projects](#-labs--projects)
 - [📎 Reference Materials](#-reference-materials)
+- [🚀 Features & Usage](#-features--usage)
 
 ---
 
@@ -32,8 +33,6 @@ Insight into how I approach incidents, from alert triage to threat hunting and p
 
 ## 🔍 Investigation Tools
 
-A list of the tools I use and how I use them.
-
 | Tool | Purpose | Link |
 |------|---------|------|
 | Wireshark | Packet analysis | [Docs](https://www.wireshark.org/docs/) |
@@ -44,9 +43,11 @@ A list of the tools I use and how I use them.
 
 ## ⚙️ Automation & Scripts
 
-- `log_parser.py` – Parses Windows event logs for lateral movement indicators
-- `ip_reputation_checker.sh` – Bash script that pulls IP info from AbuseIPDB
-- `hash_lookup.py` – Automates hash lookups across VirusTotal, Hybrid Analysis, and more
+- `soc-toolkit.py` – A Python utility that includes:
+  - ✅ IP reputation checking
+  - ✅ WHOIS lookups
+  - ✅ File hash analysis via VirusTotal
+  - ✅ Email header parsing
 
 ---
 
@@ -64,8 +65,6 @@ A list of the tools I use and how I use them.
 
 ## 📓 Playbooks
 
-Step-by-step remediation guides.
-
 - 🚨 Phishing Email Response
 - 🐚 Reverse Shell Detection
 - 🔐 Privilege Escalation Investigation
@@ -74,29 +73,44 @@ Step-by-step remediation guides.
 
 ## 🧪 Labs & Projects
 
-Projects based on hands-on labs and real-world investigations.
-
 - **Incident Response Simulation**: [Lab1-IncidentResponse.md](labs/Lab1-IncidentResponse.md)
-- **SIEM Threat Hunting**: Splunk dashboards used during internship
+- **SIEM Threat Hunting**: Splunk dashboards from internship
 - **Detection Engineering**: Custom alerts for lateral movement
 
 ---
 
 ## 📎 Reference Materials
 
-- 🧾 Josh Madakor – Professional Reference (Image will be in `/reference`)
-- 🧠 [MITRE ATT&CK Navigator Layers](https://mitre-attack.github.io/attack-navigator/)
-- 📄 Sample Resume + Interview Prep [Coming Soon]
+- 🧾 Josh Madakor – Professional Reference (Image in `/reference`)
+- 🧠 [MITRE ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator/)
+- 📄 Resume + Interview Prep [Coming Soon]
 
 ---
 
-## 📬 Contact
+## 🚀 Features & Usage
 
-📧 andonmack96@gmail.com  
-📍 Based in Columbus, GA, Available for Remote & On-Site Work  
-🔗 [LinkedIn]([https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/andon-mack-62632ab2/)) | [Medium]([https://twitter.com/yourhandle](https://medium.com/@andonrmack))
+### 🔧 Features
+
+| Function   | Description |
+|------------|-------------|
+| `--ip`     | Checks IP reputation using AbuseIPDB |
+| `--whois`  | Performs WHOIS lookup on a domain or IP |
+| `--hash`   | Queries VirusTotal to check if a file hash is malicious |
+| `--email`  | Parses raw email headers and extracts useful investigation info |
 
 ---
 
-> _Security is a journey, not a destination._  
-> — Thanks for visiting.
+### 📌 Usage Examples
+
+```bash
+# IP reputation check
+python soc-toolkit.py --ip 8.8.8.8
+
+# WHOIS lookup
+python soc-toolkit.py --whois google.com
+
+# Hash check
+python soc-toolkit.py --hash 44d88612fea8a8f36de82e1278abb02f
+
+# Email header parser
+python soc-toolkit.py --email "C:\Users\You\Documents\sample-header.txt"

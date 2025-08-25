@@ -114,3 +114,21 @@ python soc-toolkit.py --hash 44d88612fea8a8f36de82e1278abb02f
 
 # Email header parser
 python soc-toolkit.py --email "C:\Users\You\Documents\sample-header.txt"
+
+---
+
+## Setup
+
+### 1. Clone the repo (or download manually)
+```bash
+git clone https://github.com/armandw-ceo/SOC-Analyst-Toolkit.git
+cd soc-analyst-toolkit
+
+### 2. install dependencies
+```bash
+pip install -r requirements.txt
+
+### 3. Add your API Keys
+Open soctoolkit.py and paste your:
+- AbuseIPDB API key
+- VirusTotal API key
